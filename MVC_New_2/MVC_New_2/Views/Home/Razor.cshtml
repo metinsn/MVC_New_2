@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Razor</title>
+</head>
+<body>
+    <div> 
+        <p>@DateTime.Now</p>
+        <h2Razor ile değişken tanımlama></h2Razor>
+        <hr />
+        @{ 
+            string ad = "Metin";
+            string soyadi = "ŞEN";
+            <p>@ad</p>
+            <p>@soyadi</p>
+        }
+        <hr />
+        @{ 
+            Random rnd = new Random();
+            int sayi = rnd.Next(0,10);
+            for (int i = 0; i < sayi; i++)
+            {
+                <p>@ad &emsp; @soyadi</p>
+            }
+        }
+        <hr />
+    </div>
+</body>
+</html>
